@@ -29,6 +29,6 @@ project on [Github](https://github.com/kikoseijo/oc-bulma-vue-webpack-theme)
 * [VueJs](https://vuejs.org)
 * [Laravel](https://laravel.com)
 * [Webpack](https://webpack.js.org)
-* [Photos by Unsplash]https://unsplash.com/
+* [Photos by Unsplash](https://unsplash.com/)
 
 > **Important**: Enjoy it! Feedbacks welcome.
