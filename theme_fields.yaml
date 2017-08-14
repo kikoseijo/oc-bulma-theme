@@ -84,7 +84,7 @@ tabs:
       tab: Styles & Assets
       label: Animate CSS
       type: switch
-      default: false
+      default: true
 
     load_wow_js:
       tab: Styles & Assets
@@ -109,3 +109,35 @@ tabs:
       type: codeeditor
       size: huge
       language: javascript
+
+    ####################################################
+    # Tab: Social media
+    ####################################################
+    social_icon_size:
+        tab: Social media
+        label: Choose the size of the icons to display in the theme footer.
+        type: balloon-selector
+        default: is-normale
+        options:
+            is-hidden: Disabled
+            is-normale: Normal (1.5rem)
+            is-medium: Medium (2rem)
+            is-large: Large (3rem)
+
+    social_media:
+        tab: Social media
+        type: repeater
+        prompt: Add new social media
+        maxItems: 6
+        comment: Will be available site wide using the <strong>this.theme.social_media</strong> call
+        commentHtml: true
+        form:
+            fields:
+                icon:
+                    label: Icon class name ej. fa fa-facebook
+                    placeholder: fa fa-facebook
+                    span: auto
+                url:
+                    label: Social media url (Must be a full url with http:// or https://)
+                    placeholder: https://github.com/kikoseijo/oc-bulma-theme
+                    span: auto

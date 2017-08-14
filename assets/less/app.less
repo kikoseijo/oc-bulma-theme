@@ -8,7 +8,10 @@ body {
 }
 a { color: @primary-color; }
 .emoji {  margin-right: 0.5em;  margin-top: 2px;}
-.hero-icon { margin-bottom:1em;}
+.hero-icon { margin-bottom: 3rem; color: @primary-color;}
+.icon.extra-large .fa,
+.icon.extra-large .mdi { font-size: 72px;}
+
 .microCard {  padding: 30px 20px; display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 1rem; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
 box-shadow: 0 1px 5px rgba(0, 0, 0, .15); border-radius: 3px; position: relative; width: 100% }
 
@@ -45,10 +48,13 @@ nav.navbar.is-transparent .navbar-link::after {  border-color: #fff - @primary-c
     border-radius:0;
   }
 }
-
-.m-b-sm {  margin-bottom: 1rem !important;}
+.m-t-0 {  margin-top: 0 !important;}
 .m-t-sm {  margin-top: 1rem !important;}
+.m-b-0 {  margin-bottom: 0 !important;}
+.m-b-sm {  margin-bottom: 1rem !important;}
+.p-b-0 {  padding-bottom: 0 !important;}
 .p-b-sm {  padding-bottom: 1rem !important; }
+.p-t-0 {  padding-top: 0 !important;}
 .p-t-sm {  padding-top: 1rem !important;}
 
 
@@ -57,7 +63,7 @@ nav.navbar.is-transparent .navbar-link::after {  border-color: #fff - @primary-c
   border: 10px solid #fff;
 }
 
-
+figure.image { overflow: hidden;}
 
 footer  { color: darken(@primary-color-invert,15%); }
 footer strong { color: @primary-color-invert;}
@@ -67,4 +73,7 @@ footer a:hover { color:  lighten(@primary-color-invert,10%); text-decoration: un
 footer .footer-menu { background: @primary-color-darker !important;}
 footer .footer-menu .title { color: darken(@primary-color-invert,15%);}
 footer .footer-credits { background: @primary-color !important; }
+footer .social-media-icons a.icon { margin: 12px 16px; text-decoration: none;}
+footer .social-media-icons a:hover,
+footer .social-media-icons a:active { text-decoration: none; color: lighten(@primary-color-invert,30%);}
 // .footer a { color: @primary-color-invert;}
