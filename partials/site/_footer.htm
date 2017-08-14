@@ -1,0 +1,34 @@
+;;
+description = "Footer partial"
+==
+function onStart()
+{
+    $this['bye'] = "Closing footer";
+}
+==
+<footer>
+  <div class="section is-medium footer-menu">
+    <div class="container is-primary">
+
+      {% partial 'site/_footer-nav' %}
+
+    </div>
+  </div>
+
+  <div class="section footer-credits">
+    <div class="container is-primary">
+      <div class="content has-text-centered is-primary">
+        <p>
+          <a href="{{ this.theme.site_url }}">© {{ this.theme.site_name | default(this.theme.config.name) }}</a>
+          a theme by <a href="http://sunnyface.com">{{ this.theme.site_author | default(this.theme.config.author) }}</a>.
+          Powered with <a href="https://laravel.com">Laravel</a> and <a href="https://octobercms.com">OctoberCMS</a>.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/kikoseijo/oc-bulma-theme">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

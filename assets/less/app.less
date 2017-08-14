@@ -1,7 +1,12 @@
+@primary-color-invert: contrast(@primary-color, black, white, 50%);;
+@primary-color-darker: darken(@primary-color,2%);
+
+
+
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
-a { color: @link-color; }
+a { color: @primary-color; }
 .emoji {  margin-right: 0.5em;  margin-top: 2px;}
 .hero-icon { margin-bottom:1em;}
 .microCard {  padding: 30px 20px; display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: 1rem; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
@@ -52,12 +57,14 @@ nav.navbar.is-transparent .navbar-link::after {  border-color: #fff - @primary-c
   border: 10px solid #fff;
 }
 
-footer  { color: darken(#BAC3C7,15%); }
-footer strong { color: #BAC3C7;}
-footer a { color: #BAC3C7; text-decoration: none;}
-footer a.active { color: lighten(#BAC3C7,10%); text-decoration: underline;}
-footer a:hover { color: @link-color; text-decoration: underline;}
-footer .footer-menu { background: darken(@footer-color,2%) !important;}
-footer .footer-menu .title { color:#fff;}
-footer .footer-credits { background: @footer-color !important; }
-// .footer a { color: #fff - @footer-color;}
+
+
+footer  { color: darken(@primary-color-invert,15%); }
+footer strong { color: @primary-color-invert;}
+footer a { color: @primary-color-invert; text-decoration: none;}
+footer a.active { color: lighten(@primary-color-invert,10%); text-decoration: underline;}
+footer a:hover { color:  lighten(@primary-color-invert,10%); text-decoration: underline;}
+footer .footer-menu { background: @primary-color-darker !important;}
+footer .footer-menu .title { color: darken(@primary-color-invert,15%);}
+footer .footer-credits { background: @primary-color !important; }
+// .footer a { color: @primary-color-invert;}
